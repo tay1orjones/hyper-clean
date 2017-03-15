@@ -1,4 +1,4 @@
-const colors = require('./ibm-design-colors/source/colors');
+const colors = require('ibm-design-colors/source/colors');
 
 // return color by given grade, supports 'core' grade
 color = (name, grade) => {
@@ -12,39 +12,38 @@ color = (name, grade) => {
   }
 }
 
-const themeColors = {
-  black: color('black', 'core'),
-  lightBlack: color('gray', '80'),
-
-  red: color('red', 'core'),
-  lightRed: color('red', 'core'),
-
-  green: color('green', 'core'),
-  lightGreen: color('green', 'core'),
-
-  yellow: color('yellow', 'core'),
-  lightYellow: color('yellow', 'core'),
-
-  blue: color('blue', 'core'),
-  lightBlue: color('blue', 'core'),
-
-  magenta: color('magenta', 'core'),
-  lightMagenta: color('magenta', 'core'),
-
-  cyan: color('cerulean', 'core'),
-  lightCyan: color('cerulean', 'core'),
-
-  white: color('white', 'core'),
-  lightWhite: color('gray', '10')
-};
-
 exports.decorateConfig = (config) => {
 
-  colors.palettes.find(color => color.name === 'black');
-
   return Object.assign({}, config, {
-    borderColor: colors.palettes.,
-    cursorColor: 'yellow',
+    backgroundColor: color('blue', 90),
+    foregroundColor: color('blue', 10),
+    borderColor: color('blue', 80),
+    cursorColor: color('blue', 40),
+    colors: {
+      black: color('black', 'core'),
+      lightBlack: color('gray', 80),
+
+      red: color('red', 'core'),
+      lightRed: color('red', 30),
+
+      green: color('green', 30),
+      lightGreen: color('lime', 20),
+
+      yellow: color('gold', 'core'),
+      lightYellow: color('yellow', 'core'),
+
+      blue: color('blue', 'core'),
+      lightBlue: color('aqua', '20'),
+
+      magenta: color('magenta', 'core'),
+      lightMagenta: color('magenta', 30),
+
+      cyan: color('teal', 'core'),
+      lightCyan: color('teal', 20),
+
+      white: color('white', 'core'),
+      lightWhite: color('gray', 10)
+    },
     css: `
       ${config.css || ''}
       .tabs_nav .tabs_list .tab_text {
