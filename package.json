@@ -4,5 +4,8 @@
   "description": "A clean theme for hyper!",
   "main": "index.js",
   "author": "Taylor Jones",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "ibm-design-colors": "^2.0.3"
+  }
 }

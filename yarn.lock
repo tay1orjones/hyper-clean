@@ -2,3 +2,6 @@
 # yarn lockfile v1
 
 
+ibm-design-colors@^2.0.3:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/ibm-design-colors/-/ibm-design-colors-2.0.3.tgz#b47c8d8dc1b8281f7771ff90fd4cb588cb2be712"
