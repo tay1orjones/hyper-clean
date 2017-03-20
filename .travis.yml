@@ -1,5 +1,5 @@
 language: node_js
-version: stable
+node_js: "node"
 deploy:
   provider: npm
   email: taylor.jones826@gmail.com
