@@ -14,8 +14,12 @@ color = (name, grade) => {
 
 exports.decorateConfig = (config) => {
 
+  exports.onWindow = (browserWindow) => {
+    browserWindow.setVibrancy('dark');
+  };
+
   return Object.assign({}, config, {
-    backgroundColor: color('blue', 90),
+    backgroundColor: 'rgba(27, 40, 52, .7)',
     foregroundColor: color('blue', 10),
     borderColor: color('blue', 80),
     cursorColor: color('blue', 40),
@@ -47,10 +51,10 @@ exports.decorateConfig = (config) => {
     css: `
       ${config.css || ''}
       .tabs_nav .tabs_list .tab_text {
-        color: yellow;
+        color: ${color('blue', 40)};
       }
       .tabs_nav .tabs_title {
-        color: yellow;
+        color: ${color('blue', 40)};
       }
     `
   });
