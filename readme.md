@@ -9,7 +9,7 @@
 1. Edit your `~/.hyper.js` config file, add `hyper-clean` to your plugins array
 
    ```js
-   plugins: ['hyper-material-theme'],
+   plugins: ['hyper-clean'],
    ```
 
 2. Restart Hyper
