@@ -3,8 +3,22 @@
   "version": "0.0.1",
   "description": "A clean theme for hyper!",
   "main": "index.js",
-  "author": "Taylor Jones",
+  "author": {
+    "name": "Taylor Jones",
+    "email": "taylor.jones826@gmail.com",
+    "url": "tay1orjones.com"
+  },
+  "repository": "tay1orjones/hyper-clean",
   "license": "MIT",
+  "keywords": [
+    "hyper",
+    "hyper-theme",
+    "terminal",
+    "term",
+    "theme",
+    "hyperterm",
+    "clean"
+  ],
   "dependencies": {
     "ibm-design-colors": "^2.0.3"
   }
