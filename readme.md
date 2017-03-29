@@ -13,3 +13,7 @@
    ```
 
 2. Restart Hyper
+
+## Related
+* The `.bash_prompt` shown in the screenshot above can be found in [my dotfiles repo](https://github.com/tay1orjones/dotfiles/tree/master/shell)
+* [awesome-hyper](https://github.com/bnb/awesome-hyper) - a list of delightful Hyper plugins, themes, and resources.
