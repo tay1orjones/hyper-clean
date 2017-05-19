@@ -1,6 +1,6 @@
 {
   "name": "hyper-clean",
-  "version": "0.0.0-development",
+  "version": "0.0.0-semantically-released",
   "description": "A clean theme for hyper!",
   "main": "index.js",
   "author": {
