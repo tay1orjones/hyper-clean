@@ -1,11 +1,12 @@
 language: node_js
-node_js: "node"
 cache: yarn
-deploy:
-  provider: npm
-  email: taylor.jones826@gmail.com
-  api_key:
-    secure: C8/1War3pJajQN42QN0nxusKBJEGIr+b8DxHp6ixp1AO1yXi5xEgHd8sI7BDv3GdwWCrmOa+L/F/p1omVRm4GSuBOeo0Td3Dh5VUf3Gd1OF11mKXP6O0VL9M4/Z9lKExeUA2b/AGTCc3/++TsqBMZwhwcm0nqJ3qX0WrlsJ4RxXrLIDuGujRxy0WYeqbhlE+wn8MbD+HN/WQ5X3Wp2K9s0iNKYzp7x4g19jdIe7V6QVvrxG0dWVgjN/HqBzqALblJFC/X2gIPQm0Cki3hD6FGpEiRPqaiFCs9KkXDcw18NSoFELZasheHkF1aJ01yeGTI0xsfxLcNtFEE40UKhggp46HZAZjOZ3yNJCimnS4JbzO8x2Rc/Fyk6OMeZ2cv1+7z/0Xie2nydSRe5Rp/CLReb/wVteWc2TGivw8JHrsoazrCLzj7vCzoBGHFN4BmHlLfXUtleLdlDxvVNFPV5y/tKDnHpWaZCgtVeivpUbn3WUM/4ICtX8twP/ZIp3/MqZEu057Bkb71irMsVs3w76u9a+KjxBxFDPI8E+0hDfqobf99FYxxf1sRiLTvzTaNss3LtrF3OqAytlgkpq2woPiI7mgMZ/n+4BZmVhj/BHziIfDYdSz9llXvagg6b5gavOM1yDoVRO9oVYZ6yCO8HmekLIyxEuZvhG5pOyciWsgPpA=
-  on:
-    tags: true
-    repo: tay1orjones/hyper-clean
+notifications:
+  email: false
+node_js: 'node'
+before_script:
+  - npm prune
+after_success:
+  - npm run semantic-release
+branches:
+  except:
+    - /^v\d+\.\d+\.\d+$/
