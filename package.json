@@ -26,10 +26,11 @@
     "validate-commit-msg": "./lib/validate-commit-msg.js"
   },
   "scripts": {
-    "commitmsg":"echo $GIT_PARAMS",
+    "commitmsg": "./lib/validate-commit-msg.js",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "devDependencies": {
+    "chalk": "^1.1.3",
     "find-parent-dir": "^0.3.0",
     "husky": "^0.13.3",
     "semantic-release": "^6.3.6"
