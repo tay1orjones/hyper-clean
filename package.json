@@ -19,6 +19,11 @@
     "hyperterm",
     "clean"
   ],
+  "config": {
+    "commitizen": {
+      "path": "./lib/cz-emoji-adapter"
+    }
+  },
   "bin": {
     "validate-commit-msg": "./lib/validate-commit-msg.js"
   },

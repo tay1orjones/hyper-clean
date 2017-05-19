@@ -1,0 +1,65 @@
+[
+    {
+        "name": "sparkles",
+        "tag": ":sparkles:",
+        "description": "New feature",
+        "display": "✨",
+        "semver": "minor"
+    },
+    {
+        "name": "bug",
+        "tag": ":bug:",
+        "description": "Bug fix",
+        "display": "🐛",
+        "semver": "minor"
+    },
+    {
+        "name": "zap",
+        "tag": ":zap:",
+        "description": "Performance improvement",
+        "display": "⚡️",
+        "semver": "minor"
+    },
+    {
+        "name": "memo",
+        "tag": ":memo:",
+        "description": "Documentation improvement",
+        "display": "📝",
+        "semver": "patch"
+    },
+    {
+        "name": "blue_heart",
+        "tag": ":blue_heart:",
+        "description": "Chore task, unrelated to experience or user value",
+        "display": "💙",
+        "semver": "patch"
+    },
+    {
+        "name": "art",
+        "tag": ":art:",
+        "description": "Style/formatting code improvements",
+        "display": "🎨",
+        "semver": "patch"
+    },
+    {
+        "name": "hammer",
+        "tag": ":hammer:",
+        "description": "Refactor code",
+        "display": "🔨",
+        "semver": "patch"
+    },
+    {
+        "name": "white_check_mark",
+        "tag": ":white_check_mark:",
+        "description": "Tests, adding or improving",
+        "display": "✅",
+        "semver": "patch"
+    },
+    {
+        "name": "boom",
+        "tag": ":boom:",
+        "description": "Breaking change, bumps major version",
+        "display": "💥",
+        "semver": "major"
+    }
+]
