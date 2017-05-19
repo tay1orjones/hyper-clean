@@ -19,15 +19,19 @@
     "hyperterm",
     "clean"
   ],
-  "dependencies": {
-    "ibm-design-colors": "^2.0.3"
-  },
   "bin": {
     "validate-commit-msg": "./lib/validate-commit-msg.js"
   },
   "scripts": {
     "commitmsg": "./lib/validate-commit-msg.js",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
+  "release": {
+    "analyzeCommits": "./lib/semantic-release-plugins/analyze",
+    "debug": "true"
+  },
+  "dependencies": {
+    "ibm-design-colors": "^2.0.3"
   },
   "devDependencies": {
     "chalk": "^1.1.3",
